@@ -30,7 +30,7 @@ function viewCart() {
     var itemn = Object.keys(itemAndPrice)
     var price = cart[itemn]
     itemAndPrices.push(`${itemn} at /$${price}`)
-    console.log (`In your cart, you have ${iteamAndPrices}.`) 
+    console.log (`In your cart, you have ${iteamAndPrices}.`)
   }
   }
 }
