@@ -31,7 +31,7 @@ function viewCart() {
     console.log(`Your shopping cart is empty.`)
   }
   else if (cart.length===1) {
-    console.log (`You have ${itemn} at /$${price}.`)
+    console.log (`In your cart, you have ${itemn} at /$${price}.`)
   }
 }
 
