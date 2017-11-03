@@ -27,7 +27,7 @@ function viewCart() {
   var price = cart[item]
   itemAndPrices.push(`${itemn} at /$${price}`)
 }
-  
+
   if (cart.length===0) {
     console.log(`Your shopping cart is empty.`)
   }
