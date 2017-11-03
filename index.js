@@ -27,8 +27,8 @@ function viewCart() {
   else if (cart.length===1) {
     console.log (`You have ${item} at /$${price}.`)
   }
-  }
 }
+
 
 function total() {
   // write your code here
