@@ -1,11 +1,4 @@
 var cart = [];
-var itemAndPrices = [];
-for (var i=0; i < cart.length; i++) {
-var itemAndPrice = cart[i]
-var itemn = Object.keys(itemAndPrice)
-var price = cart[item]
-itemAndPrices.push(`${itemn} at /$${price}`)
-}
 
 function getCart() {
  return cart;
@@ -27,12 +20,19 @@ return cart
 
 function viewCart() {
   // write your code here
-
+  var itemAndPrices = [];
+  for (var i=0; i < cart.length; i++) {
+  var itemAndPrice = cart[i]
+  var itemn = Object.keys(itemAndPrice)
+  var price = cart[item]
+  itemAndPrices.push(`${itemn} at /$${price}`)
+}
+  
   if (cart.length===0) {
     console.log(`Your shopping cart is empty.`)
   }
   else if (cart.length===1) {
-    console.log (`You have ${itemn} at /$${price}.`)
+    console.log (`You have ${item} at /$${price}.`)
   }
   }
 }
