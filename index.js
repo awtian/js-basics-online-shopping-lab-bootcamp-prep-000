@@ -1,4 +1,11 @@
 var cart = [];
+var itemAndPrices = [];
+for (var i=0; i < cart.length; i++) {
+var itemAndPrice = cart[i]
+var itemn = Object.keys(itemAndPrice)
+var price = cart[item]
+itemAndPrices.push(`${itemn} at /$${price}`)
+}
 
 function getCart() {
  return cart;
