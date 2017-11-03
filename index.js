@@ -62,8 +62,8 @@ return totalPrice
 
 function removeFromCart(item) {
   // write your code here
-if (cart.hasOwnProperty(item)) {
-  delete cart.item
+if () {
+  
 }
 else {}
 
@@ -72,4 +72,3 @@ else {}
 function placeOrder(cardNumber) {
   // write your code here
 }
-} }
