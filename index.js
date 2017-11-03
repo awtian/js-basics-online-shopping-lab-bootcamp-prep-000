@@ -12,9 +12,9 @@ function setCart(c) {
 function addToCart(item) {
  // write your code here
 var ran = Math.floor(Math.random()*100+1)
+console.log(`${item} has ben added to the cart.`)
 var item = {[item]:ran}
 cart.push(item)
-console.log(`${item} has ben added to the cart.`)
 return cart
 }
 
