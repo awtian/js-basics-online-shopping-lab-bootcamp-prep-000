@@ -20,20 +20,28 @@ return cart
 
 function viewCart() {
   // write your code here
-  if (cart.length===0) {
-    console.log(`Your shopping cart is empty.`)
+  if (cart.length === 0) {
+  return console.log("Your shopping cart is empty.")
   }
   else {
-    var itemAndPrices = [];
-    for (var i=0; i < cart.length; i++) {
-    var itemAndPrice = cart[i]
-    var itemn = Object.keys(itemAndPrice)
-    var price = cart[itemn]
-    itemAndPrices.push(`${itemn} at /$${price}`)
-    console.log (`In your cart, you have ${iteamAndPrices}.`)
-  }
-  }
-}
+    var itemNPrices = [];
+    for (var i = 0; i < cart.length; i++) {
+     var itemNPrice = cart[i]
+     var item = Object.keys(itemNPrice)[0]
+     var price = itemNPrice[item]
+     itemNPrices.push(` ${item} at \$${price}`)
+   }
+   if (itemNPrices.length === 1) {
+     return console.log(`In your cart, you have${itemNPrices}.`)
+   }
+   else if (itemNPrices.length === 2) {
+     return console.log(`In your cart, you have${itemNPrices[0]} and${itemNPrices[1]}.`)
+   }
+   else {
+     return console.log(`In your cart, you have${itemNPrices.slice(0,-1)}, and${itemNPrices.slice(-1)}.`)
+   }
+ }
+ }
 
 
 function total() {
