@@ -63,7 +63,7 @@ return totalPrice
 function removeFromCart(item) {
   // write your code here
 if () {
-  
+
 }
 else {}
 
